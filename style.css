@@ -1,0 +1,89 @@
+html {
+    cursor: url('./img/thewhitecursorofthewebsite.png'), auto;
+    background-color: black;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header h1 {
+    font-size: 115pt;
+    text-align: center;
+    margin-top: 315px;
+    font-weight: 200;
+    padding-bottom: 380px;
+}
+
+#section1 {
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 3000px;
+}
+
+#section1 h2 {
+    font-size: 28pt;
+    font-weight: 200;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1.2s ease, transform 1.2s ease;
+}
+
+.reveal.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+h3 {
+    font-size: 28pt;
+}
+
+p {
+    font-size: 20pt;
+}
+
+q {
+    font-size: 20pt;
+}
+
+p:first-letter {
+    margin-left: 15px;
+}
+
+.cover {
+    min-width: 550px;
+    width: 15%;
+    margin-left: 155px;
+    border-radius: 18px;
+}
+
+.learnmore {
+    width: 250px;
+    height: 70px;
+    font-size: 23pt;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 77px;
+    color: white;
+    text-decoration: none;
+    opacity: 1;
+}
+
+.learnmore:hover {
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    cursor: url(./img/theblackcursorofthewebsite.png), auto;
+    transition-duration: 0.25s;
+}
+
+.learnmore a:hover {
+    color: black;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+

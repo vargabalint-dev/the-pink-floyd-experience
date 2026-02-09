@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Pink Floyd Experience</title>
+    <link rel="stylesheet" href="./style.css">  
+</head>
+<body>
+    <header>
+        <h1>The Pink Floyd Experience</h1>
+    </header>
+
+    <section id="section1" class="reveal">
+        <h2 class="reveal">Explore the albums</h2><br>
+
+        <!-- The Piper at the Gates of Dawn -->
+
+        <h3>The Piper at the Gates of Dawn (1967)</h3><br>
+        <img class="cover reveal" src="./img/covers/Pink-Floyd_The-Piper-At-the-Gates-of-Dawn.jpg" alt="The cover of Pink Floyd's 1967 studio album, 'The Piper at the Gates of Dawn' Credits: Pink Floyd" title="The cover of Pink Floyd's 1967 studio album, 'The Piper at the Gates of Dawn' Credits: Pink Floyd"><br>
+        <p class="reveal">Released in 1967, The Piper at the Gates of Dawn serves as Pink Floyd's introduction to the world. It features nine songs, and has a total runtime of 42 minutes. Critically, it was taken suprisingly well for a debut album from an otherwise unknown band. The album is also popular for being the only album <strong>Syd Barrett</strong> was featured on before the deterioration of his mental health.</p>
+        <a href="#gatesofdawn"><button class="learnmore reveal">Learn More</button></a><br><br><br><br>
+
+        <!-- A Saucerful of Secrets -->
+         
+        <h3 class="reveal">A Saucerful of Secrets (1968)</h3><br>
+        <img class="cover reveal" src="./img/covers/Pink-Floyd_A-Saucer-Full-of-Secrets.jpg" alt="The cover of Pink Floyd's 1968 studio album, 'A Saucerful of Secrets' Credits: Pink Floyd" title="The cover of Pink Floyd's 1968 studio album, 'A Saucerful of Secrets' Credits: Pink Floyd"><br>
+        <p class="reveal">By their second album, Pink Floyd laid their grounds down for what music they wanted to do. One of the biggest changes this album brought for the band was the joining of David Gilmour, who replaced Syd Barrett after his leaving of the band due to mental health issues.</p>
+        <a href="#saucerfulofsecrets"><button class="learnmore reveal">Learn More</button></a><br><br><br><br>
+
+        <!-- Soundtrack for the film More -->
+
+        <h3 class="reveal">Soundtrack for the film More (1969)</h3>
+        <img class="cover reveal" src="./img/covers/Pink-Floyd_More.jpg" alt="The cover for Pink Floyd's 1969 motion picture soundtrack, 'Soundtrack for the movie More' Credit: Pink Floyd" title="The cover for Pink Floyd's 1969 motion picture soundtrack, 'Soundtrack for the movie More' Credit: Pink Floyd"><br>
+        <p class="reveal">In 1969, Pink Floyd got the chance to write the soundtrack for the movie: <strong>More</strong>. While the album is not considered a Pink Floyd studio album, considering it's a movie soundtrack, but we'll include it here. The soundtrack was released to mixed perception, that still remains today. While it's not hated, it's not particularly loved as well. It is often considered the ugly duckling of Pink Floyd's discography.</p>
+        <a href="#more"><button class="learnmore reveal">Learn More</button></a><br><br><br><br>
+
+        <!-- Ummagumma -->
+
+        <h3 class="reveal">Ummagumma (1969)</h3><br>
+        <img class="cover reveal" src="./img/covers/Pink-Floyd_Ummagumma-orig.jpg" alt="The cover of Pink Floyd's 1969 studio album, 'Ummagumma' Credit: Pink Floyd" title="The cover of Pink Floyd's 1969 studio album, 'Ummagumma' Credit: Pink Floyd"><br>
+        <p class="reveal">Ummagumma is often one of Pink Floyd's most overlooked albums, due to its out of the ordinary nature. The album was Pink Floyd's first double album with the first LP being a <strong>live performance of songs like <em>Careful With That Axe, Eugene</em> and others</strong>. The other side was taken up by a never-seen-before thing: <strong>each member got a quarter of the LP to record their own solo compositions for the album</strong>.</p>
+        <a href="#ummagumma"><button class="learnmore reveal">Learn More</button></a><br><br><br><br>
+
+        <!-- Atom Heart Mother -->
+
+        <h3 class="reveal">Atom Heart Mother (1970)</h3><br>
+        <img class="cover reveal" src="./img/covers/Pink-Floyd_Atom-Heart-Mother.jpg" alt="The cover of Pink Floyd's 1970 studio album, 'Atom Heart Mother' Credit: Pink Floyd" title="The cover of Pink Floyd's 1970 studio album, 'Atom Heart Mother' Credit: Pink Floyd"><br>
+        <p class="reveal">Atom Heart Mother is suprisingly the most unanimously hated album by Pink Floyd's members. Roger Waters even said:</p>
+        <q class="reveal">I think, at that time we both [David Gilmour and Roger Waters] felt, that Atom Heart Mother... well, was a huge pile of rubbish to be honest.</q><br>
+        <p class="reveal">The album was the first (but not the only) time Pink Floyd had a song take up one side of the vinyl. This, of course is the famous <strong>Atom Heart Mother suite</strong>, a full 23-minute orchestral suite, composed by Ron Geesin from the bare bones rythm and structure the members of Pink Floyd gave him.</p>
+        <a href="#atomheartmother"><button class="learnmore reveal">Learn More</button></a><br><br><br><br>
+
+        <!-- Meddle -->
+
+        <h3 class="reveal">Meddle (1971)</h3><br>
+        <img class="cover reveal" src="./img/covers/Pink-Floyd_MEDDLE.jpg" alt="The cover of Pink Floyd's 1971 studio album, 'Meddle' Credit: Pink Floyd" title="The cover of Pink Floyd's 1971 studio album, 'Meddle' Credit: Pink Floyd"><br>
+        <p class="reveal">Meddle, released in 1971 is often considered to be the real <em>"start of Pink Floyd"</em>. It features their other one side songs, <strong>Echoes</strong>, which is almost universally accepted to be one of the greatest songs ever created (I totally didn't just make this up) </p>
+        <a href="#atomheartmother"><button class="learnmore reveal">Learn More</button></a><br><br><br><br>
+    </section>
+
+
+<script> /* Code written by ChatGPT, pls don't stone me */
+  const observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in-view");
+          observer.unobserve(entry.target); // reveal once
+        }
+      });
+    },
+    {
+      threshold: 0,
+      rootMargin: "0px 0px -120px 0px"
+    }
+  );
+
+  document.querySelectorAll(".reveal").forEach(el => {
+    observer.observe(el);
+  });
+</script>
+</body>
+</html>
